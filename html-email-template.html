@@ -19,8 +19,37 @@
       }
       .footer-icons {
         display: flex;
+        align-items: center;
         gap: 20px;
       }
+
+      .our-service-items{
+        display: flex;
+        gap: 70px;
+        align-items: center;
+      }
+
+      /* MEDIA QUERIES FOR SMALL SCREEN */
+      @media (max-width: 778px) {
+        .benefits-section-main {
+          margin-left: 10px !important;
+          margin-right: 20px;
+        }
+        .benefits-text-container {
+          max-width: 100%;
+        }
+
+        .our-service-items {
+          display: block !important;
+        }
+        .our-service-left-image{
+            width: 100%;
+        }
+        .our-service-image{
+            width: 100%;
+        }
+      }
+      /* MEDIA QUERIES FOR SMALL SCREEN */
     </style>
   </head>
   <body
@@ -30,7 +59,7 @@
       margin: 0;
       padding: 0;
       width: 100%;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: sans-serif;
     "
   >
     <!-- GEEKIFY HTML EMAIL TEMPLATE STARTS -->
@@ -114,7 +143,10 @@
       <!-- BANNER ENDS HERE -->
 
       <!-- BENEFITS SECTION STARTS HERE -->
-      <table style="margin-left: 150px; padding: 50px 200px">
+      <table
+        class="benefits-section-main"
+        style="margin-left: 150px; padding: 50px 20px"
+      >
         <tr>
           <td>
             <h1
@@ -128,7 +160,10 @@
               Benefits
             </h1>
 
-            <table style="max-width: 520px; margin-bottom: 25px">
+            <table
+              class="benefits-text-container"
+              style="max-width: 520px; margin-bottom: 25px"
+            >
               <tr>
                 <td
                   style="
@@ -235,7 +270,7 @@
       </table>
       <!-- BENEFITS SECTION STARTS HERE -->
 
-      <table style="width: 100%; text-align: center; padding: 0px 200px">
+      <table style="width: 100%; text-align: center; padding: 0px 20px">
         <tr>
           <td>
             <a href="#">
@@ -246,88 +281,102 @@
       </table>
 
       <!-- SERVICE SECTION STARTS HERE -->
-      <table style="width: 100%; text-align: center; padding: 80px 200px">
-        <tr>
-          <td>
-            <a href="#">
-              <img
-                src="images/service-image.png"
-                alt="our service left side image"
-              />
-            </a>
+      <table style="width: 100%; text-align: center; padding: 80px 20px">
+        <tr >
+          <td class="our-service-items">
+            <table class="our-service-left-image">
+                <tr>
+                    <td>
+                        <a href="#">
+                            <img
+                            class="our-service-image"
+                              src="images/service-image.png"
+                              alt="our service left side image"
+                            />
+                          </a>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <td style="text-align: left">
+                            <h2 style="font-size: 36px; font-weight: 700; line-height: 45px">
+                              Our Services
+                            </h2>
+                            <p
+                              style="
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 20px;
+                                margin: 0;
+                                padding-top: 15px;
+                              "
+                            >
+                              At Geeks CRS, we offer a range of email setup services designed to
+                              meet the unique needs of your business.
+                            </p>
+                            <ul>
+                              <li>
+                                <p
+                                  style="
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                    padding-top: 15px;
+                                  "
+                                >
+                                  Customised email setup for businesses of all sizes
+                                </p>
+                              </li>
+                              <li>
+                                <p
+                                  style="
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                    padding-top: 15px;
+                                  "
+                                >
+                                  Advanced email filtering and organization
+                                </p>
+                              </li>
+                              <li>
+                                <p
+                                  style="
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                    padding-top: 15px;
+                                  "
+                                >
+                                  Integration with other business applications
+                                </p>
+                              </li>
+                              <li>
+                                <p
+                                  style="
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                    padding-top: 15px;
+                                  "
+                                >
+                                  Email migration and transfer services
+                                </p>
+                              </li>
+                            </ul>
+                          </td>
+                    </td>
+                </tr>
+            </table>
           </td>
-          <td style="text-align: left">
-            <h2 style="font-size: 36px; font-weight: 700; line-height: 45px">
-              Our Services
-            </h2>
-            <p
-              style="
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 20px;
-                margin: 0;
-                padding-top: 15px;
-              "
-            >
-              At Geeks CRS, we offer a range of email setup services designed to
-              meet the unique needs of your business.
-            </p>
-            <ul>
-              <li>
-                <p
-                  style="
-                    font-size: 14px;
-                    font-weight: 400;
-                    line-height: 24px;
-                    padding-top: 15px;
-                  "
-                >
-                  Customised email setup for businesses of all sizes
-                </p>
-              </li>
-              <li>
-                <p
-                  style="
-                    font-size: 14px;
-                    font-weight: 400;
-                    line-height: 24px;
-                    padding-top: 15px;
-                  "
-                >
-                  Advanced email filtering and organization
-                </p>
-              </li>
-              <li>
-                <p
-                  style="
-                    font-size: 14px;
-                    font-weight: 400;
-                    line-height: 24px;
-                    padding-top: 15px;
-                  "
-                >
-                  Integration with other business applications
-                </p>
-              </li>
-              <li>
-                <p
-                  style="
-                    font-size: 14px;
-                    font-weight: 400;
-                    line-height: 24px;
-                    padding-top: 15px;
-                  "
-                >
-                  Email migration and transfer services
-                </p>
-              </li>
-            </ul>
-          </td>
+          
         </tr>
       </table>
       <!-- SERVICE SECTION ENDS HERE -->
 
-      <table style="width: 100%; text-align: center; padding: 0px 200px">
+      <table style="width: 100%; text-align: center; padding: 0px 20px">
         <tr>
           <td>
             <a href="#">
@@ -338,7 +387,7 @@
       </table>
 
       <!-- TESTIMONIAL SECTION STARTS HERE -->
-      <table style="width: 100%; text-align: center; padding: 50px 200px">
+      <table style="width: 100%; text-align: center; padding: 50px 20px">
         <tr>
           <td>
             <h2 style="font-size: 32px; font-weight: 700; line-height: 45px">
@@ -354,9 +403,7 @@
       <!-- TESTIMONIAL SECTION ENDS HERE -->
 
       <!-- FOOTER SECTION STARTS HERE -->
-      <table
-        style="width: 100%; background-color: #0f101d; padding: 40px 200px"
-      >
+      <table style="width: 100%; background-color: #0f101d; padding: 40px 20px">
         <tr>
           <td>
             <table style="width: 100%; text-align: center">
@@ -374,14 +421,14 @@
               <tr class="footer-icon-and-text">
                 <td class="footer-icons">
                   <a href="#">
-                    <img src="images/youtube-icon-1.png" alt="facebook icon" />
+                    <img src="images/youtube-icon-1.png" alt="youtube icon" />
                   </a>
                   <a href="#">
-                    <img src="images/ex-icon2.png" alt="facebook icon" />
+                    <img src="images/ex-icon2.png" alt="x icon" />
                   </a>
 
                   <a href="#">
-                    <img src="images/insta-icon-3.png" alt="facebook icon" />
+                    <img src="images/insta-icon-3.png" alt="linkedin icon" />
                   </a>
                   <a href="#">
                     <img src="images/fb-icon-4.png" alt="facebook icon" />
